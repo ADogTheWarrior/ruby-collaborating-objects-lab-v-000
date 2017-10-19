@@ -9,6 +9,11 @@ class Song
     parsed_filename = filename.split(" -")
   end
 
+  #a method that takes in the name and gets the artist object
+  def artist_name=(name)
+    
+  end
+  
   def artist=(artist)
     @artist = artist
   end
