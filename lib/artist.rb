@@ -12,7 +12,8 @@ class Artist
     placeholder = @@all.find { |artist| artist_name == artist.name}
 
     if placeholder == nil
-      self.new(artist_name).save
+      artist = Artist.new(artist_name).save
+      artist
     else
       placeholder
     end
