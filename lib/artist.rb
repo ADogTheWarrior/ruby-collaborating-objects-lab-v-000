@@ -8,7 +8,15 @@ class Artist
   end
 
   def self.find_or_create_by_name(artist_name)
-    initialize(name)
+    #search for artist_name
+    placeholder = @@all.find { |artist| artist_name == artist.name}
+
+    if placeholder == nil
+      new_artist = Artist.new(name)
+      new_artist.save
+    else
+      placeholder
+    end
   end
 
   def add_song(song)
