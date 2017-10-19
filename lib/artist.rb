@@ -14,7 +14,7 @@ class Artist
     @songs << song
   end
 
-  def songs
+  def print_songs
     @songs
   end
 
