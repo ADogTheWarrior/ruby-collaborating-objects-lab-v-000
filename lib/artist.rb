@@ -18,6 +18,10 @@ class Artist
     @songs
   end
 
+  def print_songs
+    puts @songs
+  end
+
   def save
     @@all << self
     @@all.uniq
