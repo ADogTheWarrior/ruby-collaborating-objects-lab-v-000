@@ -7,9 +7,7 @@ class MP3Importer
   end
 
   def files
-    Dir[../db/mp3s/*].each do |file|
-      @files << file
-    end
+    Dir[../db/mp3s/*].each {|file| @files << file }
     @files
   end
 
