@@ -13,7 +13,7 @@ class Song
   end
 
   #a method that takes in the name and gets the artist object
-  def artist_name=(name)
+  def self.artist_name=(name)
     Artist.find_or_create_by_name(name)
   end
 
