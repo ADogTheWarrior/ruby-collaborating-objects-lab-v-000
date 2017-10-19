@@ -19,9 +19,10 @@ class MP3Importer
     @files.uniq!
     @files.delete(".")
     @files.delete("..")
-    
+
     @files.each do |mp3|
       Song.new_by_filename(mp3)
+      puts "#{mp3}"
     end
   end
 end
