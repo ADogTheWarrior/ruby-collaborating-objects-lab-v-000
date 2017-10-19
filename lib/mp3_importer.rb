@@ -16,7 +16,7 @@ class MP3Importer
 
   def import
     puts "test 1"
-    puts @files
+    puts @files.size
     puts "test 2"
     @files.each do |mp3|
       puts "test 3"
