@@ -10,7 +10,7 @@ class Artist
   def self.find_or_create_by_name(artist_name)
     artist = @@all.find { |artist| artist_name == artist.name}
     if artist == nil
-      artist = Artist.new(artist_name).save
+      artist = Artist.new(artist_name)
     end
     artist
   end
