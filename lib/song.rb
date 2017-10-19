@@ -8,6 +8,6 @@ class Song
   def new_by_filename(filename)
   end
 
-  def artist_name=(name)
+  def artist=(name)
   end
 end
