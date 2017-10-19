@@ -8,6 +8,7 @@ class Song
   def new_by_filename(filename)
   end
 
-  def artist=(name)
+  def artist=(artist)
+    @artist = artist
   end
 end
