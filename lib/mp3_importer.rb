@@ -21,8 +21,8 @@ class MP3Importer
     @files.delete("..")
 
     @files.each do |mp3|
-      Song.new_by_filename(mp3)
-      puts "#{mp3}"
+      song = Song.new_by_filename(mp3)
+      puts "#{song}"
     end
   end
 end
