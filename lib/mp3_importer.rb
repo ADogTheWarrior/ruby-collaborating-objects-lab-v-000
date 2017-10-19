@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-    Dir[mp3files] {|file| files << file}
+    Dir[../db/mp3s/*] {|file| files << file}
     files
   end
 
