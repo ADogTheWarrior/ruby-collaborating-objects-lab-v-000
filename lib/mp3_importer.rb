@@ -7,6 +7,8 @@ class MP3Importer
   end
 
   def files
+    Dir[mp3files] {|file| files << file}
+    files
   end
 
   def import
