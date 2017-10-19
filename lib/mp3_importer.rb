@@ -15,11 +15,8 @@ class MP3Importer
   end
 
   def import
-    puts "test 1"
-    puts @files.size
-    puts "test 2"
+    files
     @files.each do |mp3|
-      puts "test 3"
       Song.new_by_filename(mp3)
     end
   end
