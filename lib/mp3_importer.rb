@@ -16,7 +16,7 @@ class MP3Importer
 
   def import
     @files.each do |mp3|
-      mp3.split(" - ")
+
     end
   end
 end
