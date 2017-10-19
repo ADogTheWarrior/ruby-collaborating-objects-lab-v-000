@@ -19,7 +19,7 @@ class MP3Importer
     puts @files
     puts "test 2"
     @files.each do |mp3|
-      puts "asdf"
+      puts "test 3"
       Song.new_by_filename(mp3)
     end
   end
