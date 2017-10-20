@@ -22,7 +22,6 @@ class MP3Importer
 
     @files.each do |mp3|
       song = Song.new_by_filename(mp3)
-      puts "#{song.name}"
     end
   end
 end
